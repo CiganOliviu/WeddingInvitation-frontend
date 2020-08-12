@@ -1,0 +1,13 @@
+@media(max-width: 700px) {
+
+  .welcome-message {
+    margin-top: 15em;
+  }
+  .welcome-message .message {
+    font-size: 40px;
+  }
+
+  .welcome-message h1 {
+    font-size: 30px;
+  }
+}
