@@ -31,6 +31,17 @@ a:hover {
   background: #ffffff;
 }
 
+.counter-white-background {
+	background: #ffffff;
+	padding: 1%;
+	border-radius: 50%;
+}
+
+.footer-golden-background {
+	padding: 1%;
+	background: #fffce3;
+}
+
 .golden-background {
 	padding: 4%;
 	background: #fffce3;
@@ -220,19 +231,26 @@ figure.snip1104.hover:before {
 	color: #666666;
 }
 
-.count-down li {
-  display: inline-block;
-  font-size: 1.5em;
-  list-style-type: none;
-  padding: 1em;
+#heart {
+	font-size: 30px;
 }
 
-.count-down li span {
-  display: block;
-  font-size: 4.5rem;
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-.count-down i {
-	font-size: 25px;
-	color: #666666;
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
 }
