@@ -18,6 +18,47 @@ a:hover {
 	text-decoration: none;
 }
 
+#button-to-top {
+  display: inline-block;
+  background-color: #000000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 35px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+  	opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button-to-top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#button-to-top:hover {
+  cursor: pointer;
+  background-color: #d99f00;
+}
+
+#button-to-top:active {
+  background-color: #555;
+}
+
+#button-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 .black-background {
   height: 100vh;
   background: #000000;
@@ -214,6 +255,10 @@ figure.snip1104.hover:before {
 	color: #d99f00;
 }
 
+.under-photo-description {
+	height: 50px;
+}
+
 .rsvp {
 	padding: 2%;
 }
@@ -236,21 +281,21 @@ figure.snip1104.hover:before {
 }
 
 .row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
 .column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
 .column img {
-    margin-top: 8px;
-    vertical-align: middle;
+  margin-top: 8px;
+  vertical-align: middle;
 }

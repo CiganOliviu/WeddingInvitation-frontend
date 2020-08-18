@@ -1,0 +1,176 @@
+{% extends 'home/base.html' %}
+
+{% block head %}
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/invitation.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="wallpaper">
+    <div class="container">
+      <div class="col-lg-12">
+      </div>
+    </div>
+
+  <div class="welcome">
+    <div class="black-background">
+      <div class="container">
+        <div class="col-lg-12">
+          <div class="welcome-message">
+            <h1 class="message">You are invited at our wedding!</h1>
+            <h1>12.11.2027</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>&nbsp;</div>
+
+{% load static %}
+  <div class="container" align="center">
+    <div class="col-lg-12">
+      <h1>The Wedding Day</h1>
+      <div>&nbsp;</div>
+      <p>Our wedding day event order as follows with different cultures and religions will incorporate other elements or swap things around.</p>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <ul>
+      <li>
+        <div class="content">
+          <h3>Marriage</h3>
+          <div>&nbsp;</div>
+          <img class="wedding_pngs" src="{% static 'imgs/wedding_pngs/rings.png' %}">
+          <div>&nbsp;</div>
+          <p>The processional begins with the grandparents, flows through the parents, groom, officiant, wedding party, flower girl, and ring bearer, and ends with the bride making her entrance.</p>
+        </div>
+        <div class="time">
+          <h4>09.30 AM</h4>
+        </div>
+      </li>
+
+      <li>
+        <div class="content">
+          <h3>Words of Welcome</h3>
+          <div>&nbsp;</div>
+          <img class="wedding_pngs" src="{% static 'imgs/wedding_pngs/words.png' %}">
+          <div>&nbsp;</div>
+          <p>Once everyone is in place, the officiant will say a few words of welcome. He or she may thank guests for bearing witness to your union, as well as welcome everyone to our venue for celebration.</p>
+        </div>
+        <div class="time">
+          <h4>12.30 PM</h4>
+        </div>
+      </li>
+
+      <li>
+        <div class="content">
+          <h3>Photography</h3>
+          <div>&nbsp;</div>
+          <img class="wedding_pngs" src="{% static 'imgs/wedding_pngs/photography.png' %}">
+          <div>&nbsp;</div>
+          <p>The officiant will offer an introduction and some thoughts on marriage. This could be a brief recounting of your love story, words on what marriage means to you, or a statement about the ceremony to come and represents.</p>
+        </div>
+        <div class="time">
+          <h4>3.30 PM</h4>
+        </div>
+      </li>
+
+      <li>
+        <div class="content">
+          <h3>Wedding Cake</h3>
+          <div>&nbsp;</div>
+          <img class="wedding_pngs" src="{% static 'imgs/wedding_pngs/wedding.png' %}">
+          <div>&nbsp;</div>
+          <p>A wedding cake is the traditional cake served at wedding receptions following dinner.The wedding cake is served at a wedding breakfast; the 'wedding breakfast' does not mean the meal will be held in the morning before the wedding. </p>
+        </div>
+        <div class="time">
+          <h4>3.30 PM</h4>
+        </div>
+      </li>
+
+      <li>
+        <div class="content">
+          <h3>Wedding Party</h3>
+          <div>&nbsp;</div>
+          <img class="wedding_pngs" src="{% static 'imgs/wedding_pngs/party.png' %}">
+          <div>&nbsp;</div>
+          <p>At the wedding party the officiant introduces the married couple for the first time. Then, the bride and groom lead the recessional back up the aisle as guests shower you with the rice!.</p>
+        </div>
+        <div class="time">
+          <h4>May 2018</h4>
+        </div>
+      </li>
+      <div style="clear:both;"></div>
+    </ul>
+  </div>
+
+  {% load static %}
+
+  <div class="golden-background">
+    <div class="container" align="center">
+      <div class="col-lg-12">
+
+        <h1><b>Hi {{ user.last_name }}!</b></h1>
+        <h2>{{ post.answer_sent }}</h2>
+        <div>&nbsp;</div>
+        <p>This form will help us to pre-plan our wedding event with your presence please fill out this.</p>
+        <div>&nbsp;</div>
+
+        <div class="rsvp">
+          <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <div>&nbsp;</div>
+
+            <button type="submit">RSVP now</button>
+          </form>
+        </div>
+
+        <div>&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="white-background" align="center">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="content">
+          <h1><b>Photography<b></h1>
+          <div>&nbsp;</div>
+          <p>A good snapshot at your wedding can stops a moment from running away. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="column">
+      <img src="{% static 'imgs/wedding_place/one.png' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/five.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/nine.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/twelve.jpg' %}" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="{% static 'imgs/wedding_place/two.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/six.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/ten.jpg' %}" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="{% static 'imgs/wedding_place/three.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/seven.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/eleven.jpg' %}" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="{% static 'imgs/wedding_place/four.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/eight.jpg' %}" style="width:100%">
+    </div>
+  </div>
+</div>
+
+{% endblock %}
