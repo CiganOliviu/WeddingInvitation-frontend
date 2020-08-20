@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<div class="th-wallpaper">
+<div class="second-wallpaper">
   <div class="container">
     <div class="col-lg-12">
     </div>
@@ -18,7 +18,7 @@
     <div class="container">
       <div class="col-lg-12">
         <div class="welcome-message">
-          <h1 class="message">{{ user.first_name }}, Thank you for your response!</h1>
+          <h1 class="message">{{ user.first_name }}, You are invited at our wedding!</h1>
           <h1>12.11.2027</h1>
         </div>
       </div>
@@ -26,6 +26,8 @@
   </div>
 </div>
 </div>
+
+<div>&nbsp;</div>
 
 <header class="header">
   <div class="container">
@@ -44,8 +46,6 @@
     </nav>
   </div>
 </header>
-
-<div>&nbsp;</div>
 
 {% load static %}
 <div class="container" align="center">
@@ -132,16 +132,22 @@
 <div class="container-fluid golden-background" align="center">
   <div class="col-lg-12">
     <h1><b>Hi {{ user.last_name }}!</b></h1>
-    {% for guest in guests %}
-      <div>&nbsp;</div>
-      <p>Your place is at table number {{ guest.table_number }}</p>
-      <div>&nbsp;</div>
-      {% if guest.table_image %}
-      <img class="table-image" src="{{ guest.table_image.url }}">
-      {% endif %}
-    {% endfor %}
+    <h2>{{ post.answer_sent }}</h2>
     <div>&nbsp;</div>
-    <p>Thank you for your answer and we are glad to have you around in this special moment.</p>
+    <p>This form will help us to pre-plan our wedding event with your presence please fill out this.</p>
+    <div>&nbsp;</div>
+
+    <div class="rsvp">
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <div>&nbsp;</div>
+
+        <button class="rsvp-button" type="submit">RSVP now</button>
+      </form>
+    </div>
+
     <div>&nbsp;</div>
   </div>
 </div>
@@ -149,7 +155,7 @@
 <div class="container-fluid white-background" align="center">
   <div class="col-lg-12">
     <div class="content">
-      <h1><b>Photography</b></h1>
+      <h1><b>Location Photos</b></h1>
       <div>&nbsp;</div>
       <p>A good snapshot at your wedding can stops a moment from running away. </p>
     </div>

@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 
+* {
+	text-decoration: none;
+	list-style: none;
+}
+
 body {
 	font-size: 17px;
 	font-family: 'Noto Sans JP', sans-serif;
@@ -265,7 +270,8 @@ figure.snip1104.hover:before {
 
 .rsvp a {
 	color: #ffffff;
-	padding: 2%;
+	padding: 1%;
+	font-size: 20px;
 	background: #b7e4c7;
 	text-decoration: none;
 	transition: all 500ms ease;
@@ -273,7 +279,6 @@ figure.snip1104.hover:before {
 
 .rsvp a:hover {
 	background: #d99f00;
-	color: #666666;
 }
 
 #heart {
