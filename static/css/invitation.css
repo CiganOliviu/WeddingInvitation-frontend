@@ -325,9 +325,9 @@ body {
   height:10px;
   top:24px;
   right:-6px;
-  background: #b7e4c7;
+  background: #15C39A;
   border-radius:50%;
-  box-shadow:0 0 0 3px #b7e4c7;
+  box-shadow:0 0 0 3px #15C39A;
 }
 
 .timeline ul li:nth-child(even):before {
@@ -337,9 +337,9 @@ body {
   height:10px;
   top:24px;
   left:-4px;
-  background: #b7e4c7;
+  background: #15C39A;
   border-radius:50%;
-  box-shadow:0 0 0 3px #b7e4c7;
+  box-shadow:0 0 0 3px #15C39A;
 }
 
 .timeline ul li h3 {
@@ -365,10 +365,10 @@ body {
   right:-165px;
   margin:0;
   padding:8px 16px;
-  background: #b7e4c7;
+  background: #15C39A;
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px #b7e4c7;
+  box-shadow:0 0 0 3px #15C39A;
 }
 
 .timeline ul li:nth-child(even) .time {
@@ -377,10 +377,10 @@ body {
   left:-165px;
   margin:0;
   padding:8px 16px;
-  background: #b7e4c7;
+  background: #15C39A;
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px #b7e4c7;
+  box-shadow:0 0 0 3px #15C39A;
 }
 
 @media(max-width:1000px) {
@@ -442,7 +442,7 @@ body {
   color: #ffffff;
   padding: 1%;
   font-size: 20px;
-  background: #b7e4c7;
+  background: #15C39A;
   text-decoration: none;
   transition: all 500ms ease;
 }
