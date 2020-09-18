@@ -41,10 +41,10 @@
 <label>
   <input type="checkbox">
   <span class="menu"> <span class="hamburger"></span> </span>
-  <ul>
-    <li> <a href="/"><i class="fas fa-home"></i> Home</a> </li>
-    <li> <a href="/accounts/logout"><i class="fas fa-sign-out-alt"></i> Logout</a> </li>
-    <li> <a href="/accounts/password_change"><i class="fas fa-key"></i> Change Password</a> </li>
+  <ul class="deactivate-click">
+    <li> <a class="deactivate-click" href="/"><i class="fas fa-home"></i> Home</a> </li>
+    <li> <a class="deactivate-click" href="/accounts/logout"><i class="fas fa-sign-out-alt"></i> Logout</a> </li>
+    <li> <a class="deactivate-click" href="/accounts/password_change"><i class="fas fa-key"></i> Change Password</a> </li>
   </ul>
 </label>
 
@@ -123,7 +123,11 @@
 
 <div class="container-fluid golden-background" align="center">
   <div class="col-lg-12">
-    <h1><b>Hi {{ user.last_name }}!</b></h1>
+
+    {% for answer in answers %}
+      <h1><b>Hi {{ user.last_name }}, You are our {{ answer.position }}</b></h1>
+    {% endfor %}
+
     {% for guest in guests %}
       <div>&nbsp;</div>
       <p>Your place is at table number {{ guest.table_number }}</p>
@@ -132,7 +136,7 @@
       <img class="table-image" src="{{ guest.table_image.url }}">
       {% endif %}
     {% endfor %}
-    <div>&nbsp;</div>
+    <div>&nbsp;</div><div>&nbsp;</div><div>&nbsp;</div>
     <p>Thank you for your answer and we are glad to have you around in this special moment.</p>
     <div>&nbsp;</div>
   </div>

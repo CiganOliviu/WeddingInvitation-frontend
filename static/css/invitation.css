@@ -175,6 +175,14 @@ label a {
   transition: all 250ms ease;
 }
 
+.activate-click {
+  pointer-events: auto;
+}
+
+.deactivate-click {
+  pointer-events: none;
+}
+
 label a:hover {
   transition: all 500ms ease;
 }
