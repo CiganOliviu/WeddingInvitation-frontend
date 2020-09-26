@@ -42,9 +42,9 @@
   <input type="checkbox">
   <span class="menu"> <span class="hamburger"></span> </span>
   <ul class="deactivate-click">
-    <li> <a class="deactivate-click" href="/"><i class="fas fa-home"></i> Home</a> </li>
-    <li> <a class="deactivate-click" href="/accounts/logout"><i class="fas fa-sign-out-alt"></i> Logout</a> </li>
-    <li> <a class="deactivate-click" href="/accounts/password_change"><i class="fas fa-key"></i> Change Password</a> </li>
+    <li> <a class="deactivate-click" href="{% url 'index' %}"><i class="fas fa-home"></i> Home</a> </li>
+    <li> <a class="deactivate-click" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a> </li>
+    <li> <a class="deactivate-click" href="{% url 'password_change' %}"><i class="fas fa-key"></i> Change Password</a> </li>
   </ul>
 </label>
 
@@ -164,11 +164,13 @@
       <img src="{% static 'imgs/wedding_place/two.jpg' %}" style="width:100%">
       <img src="{% static 'imgs/wedding_place/six.jpg' %}" style="width:100%">
       <img src="{% static 'imgs/wedding_place/ten.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/thirteen.jpg' %}" style="width:100%">
     </div>
     <div class="column">
       <img src="{% static 'imgs/wedding_place/three.jpg' %}" style="width:100%">
       <img src="{% static 'imgs/wedding_place/seven.jpg' %}" style="width:100%">
       <img src="{% static 'imgs/wedding_place/eleven.jpg' %}" style="width:100%">
+      <img src="{% static 'imgs/wedding_place/fourteen.jpg' %}" style="width:100%">
     </div>
     <div class="column">
       <img src="{% static 'imgs/wedding_place/four.jpg' %}" style="width:100%">
