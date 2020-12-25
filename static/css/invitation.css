@@ -374,7 +374,7 @@ label a:hover {
 }
 
 .responsive-map-container {
-   overflow:hidden;
+    overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
     height:0;
