@@ -98,7 +98,7 @@ a:hover {
 }
 
 .wallpaper {
-	background-image: url(../imgs/main_wallpaper.jpg);
+	background-image: url(../imgs/main_wallpaper_2.jpg);
 	min-height: 100vh;
 
 	@media (min-width: 768px) {
@@ -109,11 +109,11 @@ a:hover {
 		min-height: 400px;
 	}
 
-  background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .welcome-message {
